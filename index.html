@@ -10,6 +10,28 @@
 </head>
 <body>
 
+  <!-- ========== Notice Popup ========== -->
+  <div class="notice-overlay" id="noticeOverlay">
+    <div class="notice-modal" role="dialog" aria-modal="true" aria-labelledby="noticeTitle">
+      <div class="notice-header">
+        <span class="notice-tag">안내</span>
+        <h2 id="noticeTitle">프로그램 안내 및 사칭 주의</h2>
+      </div>
+      <div class="notice-body">
+        <p>소크라(Socra)의 연구활동 중 제공되는 모든 자료와 데이터, 콘텐츠는 <strong>지적재산권의 보호를 받습니다.</strong></p>
+        <p>또한 저희 소크라는 <strong>어떠한 경우에도 종교 권유, 판매·영업, 가입 권유를 하지 않습니다.</strong></p>
+        <p>소크라를 사칭한 연락이나 활동에 각별히 유의하시기 바랍니다.</p>
+      </div>
+      <div class="notice-footer">
+        <label class="notice-check">
+          <input type="checkbox" id="noticeHideToday">
+          <span>오늘 하루 보지 않기</span>
+        </label>
+        <button type="button" class="notice-close" id="noticeCloseBtn">확인</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ========== Navigation ========== -->
   <nav class="navbar">
     <div class="container">
@@ -373,6 +395,39 @@
     }
 
     // Business cards now use background images instead of canvas
+
+    // Notice popup
+    (function () {
+      const overlay = document.getElementById('noticeOverlay');
+      const closeBtn = document.getElementById('noticeCloseBtn');
+      const hideToday = document.getElementById('noticeHideToday');
+      if (!overlay) return;
+
+      const KEY = 'socraNoticeHideUntil';
+      const hideUntil = localStorage.getItem(KEY);
+      if (hideUntil && Date.now() < Number(hideUntil)) return;
+
+      overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+
+      function close() {
+        if (hideToday && hideToday.checked) {
+          const tomorrow = new Date();
+          tomorrow.setHours(24, 0, 0, 0);
+          localStorage.setItem(KEY, String(tomorrow.getTime()));
+        }
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) close();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+    })();
   </script>
 
 </body>
