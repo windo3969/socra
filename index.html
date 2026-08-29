@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Socra (소크라) — AI와 인문고전이 만나 당신만의 멘토가 됩니다</title>
+  <title>Socra (소크라) — AI와 메타인지가 만나 당신만의 멘토가 됩니다</title>
   <meta name="description" content="소크라테스의 지혜와 AI 기술이 만나 누구나 양질의 멘토링을 받을 수 있는 세상을 만듭니다.">
   <link rel="stylesheet" href="style.css">
   <link rel="favicon" href="./favicon.ico">
@@ -41,6 +41,8 @@
         <a href="about.html">회사 소개</a>
         <a href="socra.html">소크라 AI</a>
         <a href="services.html">서비스</a>
+        <a href="process.html">프로세스</a>
+        <a href="team.html">팀</a>
         <a href="education.html">독자교육</a>
         <!-- placeholder: 실제 네이버폼 URL로 교체 -->
         <a href="https://naver.me/xYNYFlxU" target="_blank" class="nav-cta">협업 요청</a>
@@ -51,194 +53,220 @@
     </div>
   </nav>
 
-  <!-- ========== Hero Section ========== -->
-  <section class="hero" id="hero">
+  <!-- ========== Hero Slider ========== -->
+  <section class="ak-hero" id="hero">
     <canvas class="hero-canvas" id="heroCanvas"></canvas>
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <div class="hero-badge-dot"></div>
-          <span>AI Mentor Development</span>
-        </div>
-        <h1>당신 안의 답을 찾는 여정,<br><em>Socra</em></h1>
-        <p class="hero-sub">AI와 인문고전이 만나 당신만의 멘토가 됩니다.<br>소크라테스의 질문법으로 설계된 AI가 당신의 성장을 돕습니다.</p>
-        <div class="hero-actions">
-          <!-- placeholder: 실제 네이버폼 URL로 교체 -->
-          <a href="https://naver.me/xYNYFlxU" target="_blank" class="btn btn-primary">
-            협업 요청
-            <span class="btn-arrow">→</span>
-          </a>
-          <a href="socra.html" class="btn btn-outline">
-            소크라 AI 알아보기
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="ak-hero-overlay"></div>
 
-  <!-- ========== Problem Section ========== -->
-  <section class="problem-section" id="problem">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">The Problem</span>
-        <h2 class="section-title">"좋은 멘토를 만나는 건<br>운이었습니다"</h2>
-        <p class="section-desc">대한민국 청년 10명 중 7명은 인생의 방향을 고민하지만, 진정한 멘토를 만나는 건 여전히 소수의 특권입니다.</p>
-      </div>
-      <div class="problem-grid">
-        <div class="problem-card reveal reveal-delay-1">
-          <div class="problem-icon">🎯</div>
-          <span class="problem-stat">73%</span>
-          <h3>멘토 부재</h3>
-          <p>청년 대다수가 진로와 삶의 방향에 대해 깊이 있는 조언을 받을 멘토가 없다고 응답합니다.</p>
-        </div>
-        <div class="problem-card reveal reveal-delay-2">
-          <div class="problem-icon">💰</div>
-          <span class="problem-stat">₩50만+</span>
-          <h3>높은 비용 장벽</h3>
-          <p>전문 코칭과 상담은 회당 수십만 원. 경제적 여유가 있어야만 양질의 멘토링에 접근할 수 있습니다.</p>
-        </div>
-        <div class="problem-card reveal reveal-delay-3">
-          <div class="problem-icon">⏰</div>
-          <span class="problem-stat">24/7</span>
-          <h3>접근성의 한계</h3>
-          <p>고민은 시간을 가리지 않지만, 멘토는 항상 곁에 있을 수 없습니다. 시간과 공간의 제약이 존재합니다.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Socra Intro Section ========== -->
-  <section class="intro-section" id="intro">
-    <div class="container">
-      <div class="intro-grid">
-        <div class="intro-text">
-          <div class="reveal">
-            <span class="section-label">About Socra</span>
-            <h2 class="section-title white">소크라테스의 지혜,<br>AI로 다시 태어나다</h2>
-            <p class="section-desc white">답을 주는 것이 아니라, 질문을 통해 스스로 진리를 발견하게 만드는 것. 소크라테스의 산파술에서 영감받은 Socra는 AI 기술과 인문고전을 결합하여 누구나 양질의 멘토링을 받을 수 있는 세상을 만듭니다.</p>
-          </div>
-          <div class="values-grid reveal reveal-delay-1">
-            <div class="value-card">
-              <span class="value-num">01</span>
-              <div>
-                <h4>자기성찰의 기술</h4>
-                <p>질문을 통해 내면을 탐색하고, 스스로 답을 찾아가는 과정을 설계합니다.</p>
-              </div>
+    <div class="ak-hero-track" id="akHeroTrack">
+      <!-- Slide 1 -->
+      <div class="ak-slide is-active">
+        <div class="container">
+          <div class="ak-slide-inner">
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              <span>AI Mentor Development</span>
             </div>
-            <div class="value-card">
-              <span class="value-num">02</span>
-              <div>
-                <h4>고전의 현대적 해석</h4>
-                <p>수천 년 인류의 지혜를 코칭 언어로 재해석하여 오늘의 고민에 연결합니다.</p>
-              </div>
-            </div>
-            <div class="value-card">
-              <span class="value-num">03</span>
-              <div>
-                <h4>기술이 만드는 평등</h4>
-                <p>AI 기술로 멘토링의 접근 장벽을 허물어 모든 청년에게 기회를 제공합니다.</p>
-              </div>
-            </div>
+            <h1 class="ak-slide-title">Value Partner</h1>
+            <p class="ak-slide-lead">당신 안의 답을 찾는 여정, <em>Socra</em></p>
+            <p class="ak-slide-sub">AI와 메타인지가 만나 당신만의 멘토가 됩니다.<br>소크라테스의 질문법으로 설계된 AI가 당신의 성장을 돕습니다.</p>
+            <p class="ak-slide-en">Value Partner in Leading AI Mentoring<br>with Metacognition</p>
           </div>
         </div>
-        <div class="intro-visual reveal reveal-delay-2">
-          <div class="intro-visual-box">
-            <canvas id="introCanvas"></canvas>
-            <div class="intro-quote">
-              <blockquote>"너 자신을 알라"</blockquote>
-              <cite>— 소크라테스</cite>
+      </div>
+      <!-- Slide 2 -->
+      <div class="ak-slide">
+        <div class="container">
+          <div class="ak-slide-inner">
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              <span>Socratic Method</span>
             </div>
+            <h1 class="ak-slide-title">Ask, Not Answer</h1>
+            <p class="ak-slide-lead">질문이 답보다 강하다</p>
+            <p class="ak-slide-sub">답을 주는 것이 아니라, 질문을 통해 스스로 진리를 발견하게 만드는 것.<br>소크라테스의 산파술에서 영감받은 AI 멘토링입니다.</p>
+            <p class="ak-slide-en">Self-discovery through the power of questions</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="ak-slide">
+        <div class="container">
+          <div class="ak-slide-inner">
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              <span>Mentoring for All</span>
+            </div>
+            <h1 class="ak-slide-title">Equal Growth</h1>
+            <p class="ak-slide-lead">멘토링의 평등을 실현합니다</p>
+            <p class="ak-slide-sub">경제적 여건, 인맥, 지역에 관계없이<br>모든 청년이 자신의 잠재력을 발견할 수 있도록.</p>
+            <p class="ak-slide-en">Everyone deserves a great mentor</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Slider controls (AKIS style) -->
+    <div class="container">
+      <div class="ak-hero-controls">
+        <span class="ak-count"><b id="akCount">01</b> / <span id="akTotal">03</span></span>
+        <button class="ak-arrow" id="akPrev" aria-label="이전 슬라이드">‹</button>
+        <button class="ak-playpause" id="akPlay" aria-label="재생/일시정지">❚❚</button>
+        <button class="ak-arrow" id="akNext" aria-label="다음 슬라이드">›</button>
+      </div>
+    </div>
+
+    <!-- Right dot nav -->
+    <div class="ak-hero-dots" id="akDots">
+      <span class="ak-hero-dotlabel">WHO</span>
+      <button class="ak-dot is-active" data-i="0" aria-label="슬라이드 1"></button>
+      <button class="ak-dot" data-i="1" aria-label="슬라이드 2"></button>
+      <button class="ak-dot" data-i="2" aria-label="슬라이드 3"></button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#industry" class="ak-scroll">
+      <span>SCROLL</span>
+      <span class="ak-scroll-line"></span>
+    </a>
   </section>
 
-  <!-- ========== Business Section ========== -->
-  <section class="business-section" id="business">
+  <!-- ========== INDUSTRY (핵심 영역) ========== -->
+  <section class="ak-section" id="industry">
+    <span class="ak-side-label"><i></i><b>SOCRA</b><i></i></span>
     <div class="container">
-      <div class="reveal">
-        <span class="section-label">Our Business</span>
-        <h2 class="section-title">AI 기술과 인문학의<br>새로운 교차점</h2>
-        <p class="section-desc">Socra는 두 가지 핵심 사업을 통해 AI 멘토링의 미래를 만들어갑니다.</p>
+      <div class="ak-head reveal">
+        <h2 class="ak-head-title">SOCRA</h2>
+        <p class="ak-head-sub">소크라는 청년에게 최고의 성장 경험을 제공합니다</p>
+        <p class="ak-head-desc">AI와 메타인지를 기반으로 누구나 닿을 수 있는 멘토링의 현장을 만나보세요</p>
       </div>
-      <div class="business-grid">
-        <div class="business-card reveal reveal-delay-1">
-          <div class="business-card-visual business-card-img">
-            <!-- placeholder: 실제 이미지로 교체 시 src를 변경하세요 -->
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="AI 멘토 모델 개발">
-            <div class="business-card-img-overlay"></div>
-          </div>
-          <div class="business-card-body">
-            <h3>AI 멘토 "소크라" 모델 개발</h3>
-            <p>자기성찰 질문, 공감, 성장 방향 제시가 가능한 AI 모델을 개발합니다. 코칭 도구 기반의 맞춤형 대화를 설계하여 24시간 접근 가능한 AI 인생멘토를 구현합니다.</p>
-            <ul class="business-features">
-              <li>자기성찰 유도 질문 생성 엔진</li>
-              <li>코칭 도구 기반 맞춤형 대화 설계</li>
-              <li>인문고전 지혜 학습 데이터 적용</li>
-              <li>24시간 실시간 AI 멘토링</li>
-            </ul>
-          </div>
-        </div>
-        <div class="business-card reveal reveal-delay-2">
-          <div class="business-card-visual business-card-img">
-            <!-- placeholder: 실제 이미지로 교체 시 src를 변경하세요 -->
-            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80" alt="인문고전 코칭 교재 연구">
-            <div class="business-card-img-overlay"></div>
-          </div>
-          <div class="business-card-body">
-            <h3>인문고전 코칭 교재 연구</h3>
-            <p>인문고전을 코칭 언어로 재해석한 독자적 교재를 개발합니다. 코칭 도구를 기반으로 유형별 맞춤 고전을 연결하여 AI 모델 학습의 핵심 데이터를 생산합니다.</p>
-            <ul class="business-features">
-              <li>인문고전의 코칭 언어 재해석</li>
-              <li>유형별 맞춤 고전 매칭 시스템</li>
-              <li>AI 학습 데이터 핵심 원천</li>
-              <li>독자적 교육 콘텐츠 체계</li>
-            </ul>
-          </div>
-        </div>
+
+      <div class="ak-industry-grid">
+        <a href="socra.html" class="ak-ind-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="소크라 AI">
+          <div class="ak-ind-overlay"></div>
+          <span class="ak-ind-label">소크라 AI</span>
+        </a>
+        <a href="services.html" class="ak-ind-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80" alt="서비스">
+          <div class="ak-ind-overlay"></div>
+          <span class="ak-ind-label">서비스</span>
+        </a>
+        <a href="education.html" class="ak-ind-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80" alt="독자 교육">
+          <div class="ak-ind-overlay"></div>
+          <span class="ak-ind-label">독자교육</span>
+        </a>
+        <a href="team.html" class="ak-ind-card reveal reveal-delay-4">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="팀">
+          <div class="ak-ind-overlay"></div>
+          <span class="ak-ind-label">팀</span>
+        </a>
+        <a href="about.html" class="ak-ind-card reveal reveal-delay-5">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="회사 소개">
+          <div class="ak-ind-overlay"></div>
+          <span class="ak-ind-label">회사소개</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ========== Process Section ========== -->
-  <section class="process-section" id="process">
+  <!-- ========== SERVICE (아이콘 카드) ========== -->
+  <section class="ak-section ak-section-alt" id="service">
+    <span class="ak-side-label"><i></i><b>SERVICE</b><i></i></span>
     <div class="container">
-      <div class="reveal" style="text-align: center;">
-        <span class="section-label">How It Works</span>
-        <h2 class="section-title">AI가 구현하는<br>소크라테스식 멘토링</h2>
-        <p class="section-desc" style="margin: 0 auto;">코칭 도구와 인문고전의 지혜를 AI가 통합하여 개인 맞춤형 성장 경로를 설계합니다.</p>
+      <div class="ak-head reveal">
+        <h2 class="ak-head-title">SERVICE</h2>
+        <p class="ak-head-sub">소크라가 제안하는 질 높은 멘토링의 파도를 경험하세요</p>
+        <p class="ak-head-desc">고객의 성장을 위해 최적화된 서비스를 제공합니다</p>
       </div>
-      <div class="process-steps">
-        <div class="process-step reveal reveal-delay-1">
-          <div class="process-step-num">1</div>
+
+      <div class="ak-service-grid">
+        <div class="ak-svc-card reveal reveal-delay-1">
+          <div class="ak-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="24" r="16"/><path d="M24 16v10l6 4"/></svg>
+          </div>
+          <h4>자기성찰 질문</h4>
+          <p>스스로 답을 찾게 하는 질문 설계</p>
+        </div>
+        <div class="ak-svc-card reveal reveal-delay-2">
+          <div class="ak-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="18" cy="18" r="8"/><circle cx="32" cy="32" r="8"/><path d="M23 23l4 4"/></svg>
+          </div>
+          <h4>메타인지 연결</h4>
+          <p>검증된 성찰 전략의 맞춤 연결</p>
+        </div>
+        <div class="ak-svc-card reveal reveal-delay-3">
+          <div class="ak-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 30h8v6h-8zM20 22h8v14h-8zM28 14h8v22h-8z"/></svg>
+          </div>
           <h4>코칭 도구 분석</h4>
-          <p>검증된 코칭 도구를 활용하여 사용자의 현재 상태와 고민의 본질을 파악합니다.</p>
+          <p>사용자 유형과 고민의 본질 진단</p>
         </div>
-        <div class="process-step reveal reveal-delay-2">
-          <div class="process-step-num">2</div>
-          <h4>원인 탐색</h4>
-          <p>소크라테스식 질문법으로 표면적 고민 아래 숨겨진 근본 원인을 함께 탐색합니다.</p>
+        <div class="ak-svc-card reveal reveal-delay-4">
+          <div class="ak-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="14" y="12" width="20" height="24" rx="2"/><path d="M20 20h8M20 26h8"/></svg>
+          </div>
+          <h4>24시간 멘토링</h4>
+          <p>시공간 제약 없는 AI 인생멘토</p>
         </div>
-        <div class="process-step reveal reveal-delay-3">
-          <div class="process-step-num">3</div>
-          <h4>인문고전 연결</h4>
-          <p>사용자의 상황에 맞는 인문고전의 지혜를 선별하여 현대적 맥락으로 전달합니다.</p>
+        <div class="ak-svc-card reveal reveal-delay-5">
+          <div class="ak-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 32l8-8 5 5 9-11"/><path d="M32 18h4v4"/></svg>
+          </div>
+          <h4>성장 방향 설계</h4>
+          <p>실행 가능한 성장 경로 제시</p>
         </div>
-        <div class="process-step reveal reveal-delay-4">
-          <div class="process-step-num">4</div>
-          <h4>성장 방향 제시</h4>
-          <p>자기성찰의 결과를 바탕으로 구체적이고 실행 가능한 성장 방향을 함께 설계합니다.</p>
-        </div>
-      </div>
-      <div class="process-note reveal reveal-delay-5">
-        <strong>Socra AI</strong>는 이 모든 과정을 자연어 대화로 구현합니다. 코칭 전문가의 방법론과 인문고전의 깊이를 AI 기술로 통합한 새로운 멘토링 경험입니다.
       </div>
     </div>
   </section>
 
-  <!-- ========== Collaboration CTA Section ========== -->
+  <!-- ========== PROCESS (뉴스형 캐러셀) ========== -->
+  <section class="ak-section" id="process">
+    <span class="ak-side-label"><i></i><b>PROCESS</b><i></i></span>
+    <div class="container">
+      <div class="ak-head reveal">
+        <h2 class="ak-head-title">SOCRA PROCESS</h2>
+        <p class="ak-head-sub">소크라가 멘토링을 완성하는 과정을 만나보세요</p>
+        <a href="process.html" class="ak-more">MORE VIEW →</a>
+      </div>
+
+      <div class="ak-news reveal reveal-delay-1">
+        <button class="ak-news-arrow" id="akNewsPrev" aria-label="이전">‹</button>
+        <div class="ak-news-viewport">
+          <div class="ak-news-track" id="akNewsTrack">
+            <article class="ak-news-card">
+              <span class="ak-news-step">STEP 01</span>
+              <h3>코칭 도구 분석</h3>
+              <p>검증된 코칭 도구를 활용하여 사용자의 현재 상태와 고민의 본질을 파악합니다.</p>
+              <a href="process.html#step1" class="ak-news-more">Detail View →</a>
+            </article>
+            <article class="ak-news-card">
+              <span class="ak-news-step">STEP 02</span>
+              <h3>원인 탐색</h3>
+              <p>소크라테스식 질문법으로 표면적 고민 아래 숨겨진 근본 원인을 함께 탐색합니다.</p>
+              <a href="process.html#step2" class="ak-news-more">Detail View →</a>
+            </article>
+            <article class="ak-news-card is-active">
+              <span class="ak-news-step">STEP 03</span>
+              <h3>메타인지 전략 연결</h3>
+              <p>사용자의 상황에 맞는 메타인지 전략을 선별하여 현대적 맥락으로 전달합니다.</p>
+              <a href="process.html#step3" class="ak-news-more">Detail View →</a>
+            </article>
+            <article class="ak-news-card">
+              <span class="ak-news-step">STEP 04</span>
+              <h3>성장 방향 제시</h3>
+              <p>자기성찰의 결과를 바탕으로 구체적이고 실행 가능한 성장 방향을 함께 설계합니다.</p>
+              <a href="process.html#step4" class="ak-news-more">Detail View →</a>
+            </article>
+          </div>
+        </div>
+        <button class="ak-news-arrow" id="akNewsNext" aria-label="다음">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Collaboration CTA ========== -->
   <section class="collab-section" id="collab">
     <div class="container">
       <div class="reveal">
@@ -280,7 +308,7 @@
           <!-- placeholder: 실제 이메일 주소로 교체 -->
           <a href="mailto:contact@socra.kr">contact@socra.kr</a>
           <a href="about.html">회사 소개</a>
-        <a href="education.html">독자교육</a>
+          <a href="education.html">독자교육</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -302,19 +330,69 @@
       });
     }
 
-    // Initialize Intro Canvas
-    const introCanvas = document.getElementById('introCanvas');
-    if (introCanvas) {
-      new MiniParticle(introCanvas, {
-        particleCount: 40,
-        speed: 0.2,
-        lineMaxDist: 100
-      });
-    }
+    // ===== Hero Slider =====
+    (function () {
+      const slides = document.querySelectorAll('.ak-slide');
+      const dots = document.querySelectorAll('.ak-dot');
+      const countEl = document.getElementById('akCount');
+      const totalEl = document.getElementById('akTotal');
+      const prev = document.getElementById('akPrev');
+      const next = document.getElementById('akNext');
+      const playBtn = document.getElementById('akPlay');
+      if (!slides.length) return;
 
-    // Business cards now use background images instead of canvas
+      let idx = 0;
+      let playing = true;
+      let timer = null;
+      const pad = (n) => String(n + 1).padStart(2, '0');
+      totalEl.textContent = pad(slides.length - 1);
 
-    // Notice popup
+      function go(n) {
+        idx = (n + slides.length) % slides.length;
+        slides.forEach((s, i) => s.classList.toggle('is-active', i === idx));
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === idx));
+        countEl.textContent = pad(idx);
+      }
+      function nextSlide() { go(idx + 1); }
+
+      function play() { playing = true; playBtn.textContent = '❚❚'; clearInterval(timer); timer = setInterval(nextSlide, 5000); }
+      function pause() { playing = false; playBtn.textContent = '▶'; clearInterval(timer); }
+
+      prev.addEventListener('click', () => { go(idx - 1); if (playing) play(); });
+      next.addEventListener('click', () => { go(idx + 1); if (playing) play(); });
+      playBtn.addEventListener('click', () => playing ? pause() : play());
+      dots.forEach((d) => d.addEventListener('click', () => { go(Number(d.dataset.i)); if (playing) play(); }));
+
+      go(0);
+      play();
+    })();
+
+    // ===== Process (news-style) carousel =====
+    (function () {
+      const track = document.getElementById('akNewsTrack');
+      const cards = track ? Array.from(track.children) : [];
+      const prev = document.getElementById('akNewsPrev');
+      const next = document.getElementById('akNewsNext');
+      if (!cards.length) return;
+
+      let active = cards.findIndex((c) => c.classList.contains('is-active'));
+      if (active < 0) active = 0;
+
+      function render() {
+        cards.forEach((c, i) => c.classList.toggle('is-active', i === active));
+        const card = cards[active];
+        const offset = card.offsetLeft - (track.parentElement.clientWidth - card.clientWidth) / 2;
+        track.style.transform = 'translateX(' + (-offset) + 'px)';
+      }
+      prev.addEventListener('click', () => { active = (active - 1 + cards.length) % cards.length; render(); });
+      next.addEventListener('click', () => { active = (active + 1) % cards.length; render(); });
+      cards.forEach((c, i) => c.addEventListener('click', () => { active = i; render(); }));
+
+      window.addEventListener('resize', render);
+      render();
+    })();
+
+    // ===== Notice popup =====
     (function () {
       const overlay = document.getElementById('noticeOverlay');
       const closeBtn = document.getElementById('noticeCloseBtn');
